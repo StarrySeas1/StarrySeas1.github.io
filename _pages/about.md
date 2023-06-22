@@ -1,50 +1,69 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: ""
 excerpt: "About me"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+# Recent Projects
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, academicpages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+## Large Language Model
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+&emsp;&emsp; YuxinGPT is an autoregressive language model trained on a 189GB Chinese corpus with parameters of 220M/1B/3B/13B. Due to its main focus on the domains of psychology and astrology, we increased the proportion of data related to psychology and astrology compared to other general domain models (LLaMA, BLOOM). This specialization enables YuxinGPT to excel in downstream tasks related to these two domains. In our evaluation, YuxinGPT outperforms the fine-tuned LLaMA-7B and BLOOM-7B1 models and slightly underperforms ChatGLM-6B on our constructed test set.
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+![Fig.1](/images/WX20230614-171632.png){:height="50%" width="50%"}
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+Case study
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+![Fig.2](/images/YxGPT_01.jpg){:height="60%" width="60%"}
 
-**Markdown generator**
+![Fig.3](/images/YxGPT_02.jpg){:height="60%" width="60%"}
 
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the academicpages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
+## Large Language Model(mT5-Large-770M) for solving applied math problems in primary and secondary schools.
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+&emsp;&emsp; In order to enhance support for downstream tasks and address automated mathematical problem-solving through a seq2seq model, we have developed Math-LLM. This model has been trained for a duration of two weeks using a T5 architecture on two TPUs, leveraging a parallel corpus of over 2 million instances. Extensive testing across multiple downstream tasks has revealed that Math-LLM exhibits the ability to generate accurate problem-solving approaches. While occasional errors in specific numerical values may occur, Math-LLM demonstrates remarkable performance in tasks such as generating explanatory content and effectively classifying problem types.
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
+![Fig.7](/images/math-llm.png){:height="50%" width="50%"}
 
-For more info
-------
-More info about configuring academicpages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+
+## Knowledge-based conversational system using large-scale language model
+&emsp;&emsp; Large-scale language models perform well on text generation tasks, but they often suffer from hallucination problems, especially in knowledge-based question answering. To solve this problem, we introduce a knowledge graph and search engine, and format the input of the model into a conversational format. In our evaluation, this improvement significantly reduces the search space of text generation models by analyzing user input through NER, knowledge graphs and search engines, constructing prompts containing knowledge, and then inputting spliced ​​prompt text into the model, thus alleviating the impact of the hallucination problem on the generated text.
+
+![Fig.4](/images/KBChatBot.png){:height="50%" width="50%"}
+
+<!-- Demo: 192.168.1.1 -->
+
+## Hierarchical text generation based on block-masked MT5.
+
+&emsp;&emsp; When solving a math problem, a qualified teacher will often divide the entire problem-solving process into several parts to facilitate students' understanding of the problem. The figure below illustrates the different explanatory texts corresponding to different parsing steps.
+![Fig.5](/images/Explain_the_interpretation_of_the_segment.png)
+In the process of explaining a complete problem-solving procedure, it needs to be explained in several small parts. We control the generation of explanatory text at different levels by setting different attention mask matrices. Because the parsing steps of the MWP are organized in a tree structure, the parsing text fragment corresponding to the parent node and the parsing text fragment corresponding to the child node partially overlap. When constructing a parallel corpus, the source text is not very different, but the target text is different. Due to the existence of repeated segments, if the parent node and the child node are regarded as an independent sample, the proportion of the child node in the training set is increased implicitly, thus affecting the generation of the overview text of the parent node. In order to solve this problem, the tree structure text features are extracted by modifying the form of the Attention Mask matrix.
+![Fig.6](/images/attention_mask.png)
+
+## Combining Image and Text for Chinese Spelling Correction
+
+&emsp;&emsp; Correcting spelling mistakes is a complex task that presents significant challenges in obtaining satisfactory solutions. In this study, we focus on Chinese spelling error correction (CSC). The state-of-the-art method utilizes the BERT architecture to detect and correct errors in a single sentence, and the joint training of error detection and error correction effectively reduces cascading errors. However, deploying such models in real-world scenarios often encounters false and missed corrections due to OCR errors. To address this issue, we propose an innovative approach to combine image and text information, exploiting visual cues to improve the performance of the entire error correction pipeline in scenarios where OCR is inaccurate. Our evaluation demonstrates the potential of this approach in real-world scenarios to address both miscorrections and missed corrections, leading to more precise and comprehensive error detection and correction. [Paper](/files/paper_01.pdf)
+
+<!-- ## College entrance examination (CEE) math problem-solving robot.
+
+blabla -->
+
+<!-- # [Research](https://www.researchgate.net/scientific-contributions/Shitong-Qin-2119476520) -->
+# Research
+
+## Journal Papers:
+
+Shitong Qin, Leqi Sha, et al. Combining Image and Text for Chinese Spelling Correction. DOI: 10.13140/RG.2.2.34400.87046. [Paper](https://www.researchgate.net/publication/371684241_Combining_Image_and_Text_for_Chinese_Spelling_Correction)
+
+Qin, Shitong & Renxian, Li & Yang, Ruiping & Ding, Chunying. (2016). Debye series analysis of internal and near-surface fields for a homogeneous sphere illuminated by an axicon-generated vector Bessel beam. Journal of Quantitative Spectroscopy and Radiative Transfer. 195. 10.1016/j.jqsrt.2016.12.025. [Paper](https://www.sciencedirect.com/science/article/abs/pii/S0022407316304861)
+
+Yang, Ruiping & Renxian, Li & Qin, Shitong & Ding, Chunying & Mitri, F. (2017). Direction reversal of the optical spin torque on a Rayleigh absorptive sphere in vector Bessel polarized beams. Journal of Optics. 19. 025602. 10.1088/2040-8986/19/2/025602. [Paper](https://iopscience.iop.org/article/10.1088/2040-8986/19/2/025602)
+
+Wen, Yao & Xi, Qiangli & Renxian, Li & Qin, Shitong & Ding, Chunying. (2017). Scattering of a vector Bessel-Gaussian beam by a sphere. Journal of Quantitative Spectroscopy and Radiative Transfer. 204. 10.1016/j.jqsrt.2017.08.025. [Paper](https://www.sciencedirect.com/science/article/abs/pii/S0022407317303953)
+
+Wen Y, Xi Q, Li R, et al. Scattering of a vector Bessel-Gaussian beam by a sphere[J]. Journal of Quantitative Spectroscopy and Radiative Transfer, 2018, 204: 165-178. [Paper](https://www.sciencedirect.com/science/article/abs/pii/S0022407317303953)
+
+Yang R, Li R, Qin S, et al. Direction reversal of the optical spin torque on a Rayleigh absorptive sphere in vector Bessel polarized beams[J]. Journal of Optics, 2016, 19(2): 025602. [Paper](https://iopscience.iop.org/article/10.1088/2040-8986/19/2/025602)
