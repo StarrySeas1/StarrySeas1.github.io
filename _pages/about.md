@@ -58,6 +58,12 @@ blabla -->
 
 Shitong Qin, Leqi Sha, et al. Combining Image and Text for Chinese Spelling Correction. DOI: 10.13140/RG.2.2.34400.87046. [Paper](https://www.researchgate.net/publication/371684241_Combining_Image_and_Text_for_Chinese_Spelling_Correction)
 
+------
+
+The following papers are published in the field of electronic information
+
+------
+
 Qin, Shitong & Renxian, Li & Yang, Ruiping & Ding, Chunying. (2016). Debye series analysis of internal and near-surface fields for a homogeneous sphere illuminated by an axicon-generated vector Bessel beam. Journal of Quantitative Spectroscopy and Radiative Transfer. 195. 10.1016/j.jqsrt.2016.12.025. [Paper](https://www.sciencedirect.com/science/article/abs/pii/S0022407316304861)
 
 Yang, Ruiping & Renxian, Li & Qin, Shitong & Ding, Chunying & Mitri, F. (2017). Direction reversal of the optical spin torque on a Rayleigh absorptive sphere in vector Bessel polarized beams. Journal of Optics. 19. 025602. 10.1088/2040-8986/19/2/025602. [Paper](https://iopscience.iop.org/article/10.1088/2040-8986/19/2/025602)
